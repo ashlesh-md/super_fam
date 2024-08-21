@@ -1,4 +1,4 @@
-name: time_tracker
+name: assignment_1
 description: "A new Flutter project."
 
 publish_to: "none"
@@ -6,24 +6,20 @@ publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ^3.5.0
 
 dependencies:
   flutter:
     sdk: flutter
 
-  provider: ^6.1.2
-  http: ^1.2.2
-  google_fonts: ^6.2.1
-  boardview: ^0.2.2
-  shared_preferences: ^2.2.3
-  fluttertoast: ^8.2.5
+  cupertino_icons: ^1.0.8
+  sqflite: ^2.3.3+1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^3.0.0
+  flutter_lints: ^4.0.0
 
 flutter:
   uses-material-design: true

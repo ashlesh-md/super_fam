@@ -1,61 +1,32 @@
-# time_tracker
+# Assignment 1
 
 ## Description
 
-A Flutter application that provides a Kanban board for task management, allowing users to create, edit, and move tasks between different columns ("To Do", "In Progress", "Done"). The app includes a timer function to track time spent on each task, a history of completed tasks, and a comment feature for each task. The Todoist API is used for task management, and local storage is handled using SharedPreferences.
-
+This Flutter application is designed to manage key-value pairs using a local SQLite database. The app features a home screen where users can view, add, and manage key-value pairs. Users can input a key and value through a bottom sheet, which is then saved to the database and displayed in a list. The app uses `sqflite` for database operations.
 
 ## Demo Video
 
-[![Watch the video]()](https://drive.google.com/file/d/1NVU-9KFMjtku9GjIEsAS_ZdvMW2nd6q5/view)
+[Demo](https://drive.google.com/file/d/1QP-_7c1ql7UUQkuvKXUknBK-wUKmIgNx/view?usp=sharing)
 
 ## Features
 
-1. **Kanban Board**:
-   - Users can create, edit, and move tasks between different columns ("To Do", "In Progress", "Done").
-   - Tasks are displayed in a draggable grid view.
-
-2. **Timer Function**:
-   - Users can start and stop tracking the time spent on each task.
-   - Time spent on tasks is recorded and displayed.
-
-3. **History of Completed Tasks**:
-   - A history of completed tasks is maintained, including the time spent on each task and the date it was completed.
-
-4. **Comments on Tasks**:
-   - Users can add, view and delete comments on each task.
-
-5. **Attractive UI**:
-   - Custom styling for widgets like AppBars, TabBars, and Buttons.
-   - Use of Google Fonts for a modern look.
-   - Gradient backgrounds for enhanced visual appeal.
-
-## Best Practices
-
-  - **DRY, KISS, SOLID Principles**: Ensuring code reusability, simplicity, and adherence to best practices.
-  - **MVP Principle**: Focus on core functionalities first, with iterative improvements.
-  - **User-Centered Design**: Designed with user needs, goals, and preferences in mind.
-  - **Performance Optimization**: Fast loading times, smooth scrolling, and minimal memory and battery usage.
-
-
-## API Services
-
-- The application utilizes the Todoist API for task management.
-- Test Token is used for API authentication.
-- If certain functionality is not provided by the API, local solutions using SharedPreferences are implemented.
+- **Add Key-Value Pairs**: Users can add new key-value pairs through a bottom sheet.
+- **View Key-Value Pairs**: Display a list of saved key-value pairs.
+- **Local Storage**: Uses SQLite database for local data persistence.
+- **Responsive UI**: The app adjusts to different screen sizes and orientations.
 
 ## Getting Started
 
 ### Prerequisites
 
-- Flutter SDK: Ensure you have Flutter installed on your machine. Follow the instructions on the official Flutter website to set it up.
+- **Flutter SDK**: Ensure you have Flutter installed on your machine. Follow the instructions on the [official Flutter website](https://flutter.dev/docs/get-started/install) to set it up.
 
 ### Installation
 
 1. **Clone the Repository**:
    ```bash
    git clone <repository-url>
-   cd time_tracker
+   cd assignment_1
    ```
 2. **Install Dependencies**:
    ```bash
@@ -65,34 +36,11 @@ A Flutter application that provides a Kanban board for task management, allowing
    ```bash
    flutter run
    ```
-## Usage
-### Kanban Board
- - Create Task: Add a new task by tapping the 'Add Task' button.
- - Edit Task: Tap on a task to edit its content and description.
- - Move Task: Drag and drop tasks between columns to update their status.
-
-### Timer Function
- - Start Timer: Tap the 'Start' button on a task to begin tracking time.
- - Stop Timer: Tap the 'Stop' button to stop tracking and save the time spent.
 
 ### Completed Tasks History
- - View History: Navigate to the 'Completed Tasks' section to see a list of all completed tasks, along with the time spent and completion date.
- - Comments on Tasks
- - Add Comment: Tap on a task and navigate to the comments section to add a comment.
- - View Comments: View all comments associated with a task in the comments section and also able to delete the same.
+   - Created a HomeScreen to display and manage key-value pairs.
+   - Implemented a DBHelper class to handle SQLite database operations.
+   - Added functionality to insert and retrieve key-value pairs from the database.
+   - Designed a bottom sheet for adding new key-value pairs.
+   - Configured MaterialApp with a custom theme and home screen.
 
-### APK Size
- - Android Build APK Size: 7.1 MB
-
-
-## Screenshots
-<img src="" width="480">
-<img src="" width="480">
-<img src="" width="480">
-<img src="" width="480">
-<img src="" width="480">
-<img src="" width="480">
-<img src="" width="480">
-<img src="" width="480">
-<img src="" width="480">
-<img src="" width="480">
